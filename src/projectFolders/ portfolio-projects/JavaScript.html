@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+        /* Deep contrast */
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* github link */
+      .git {
+        background-color: #fca311;
+        color: #000000;
+        font-size: 18px;
+        border: none;
+        padding: 12px 24px;
+        border: 2px solid #fca311;
+        border-radius: 6px;
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Button Hover Effect */
+      .git:hover {
+        background-color: transparent;
+        color: #fca311;
+        border-color: #fca311;
+        transform: translateY(-2px);
+      }
+
+      .projects {
+        padding: 50px;
+        text-align: center;
+      }
+
+      .projects h1 {
+        color: #fca311;
+        /* Orange highlight */
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .projects h1 i {
+        font-size: 40px;
+        color: #fca311;
+      }
+      /* Project Box Container */
+      .project-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      /*  Project Box */
+      .project-box {
+        color: white;
+        background: #14213d;
+        padding: 20px;
+        width: 280px;
+        border-radius: 10px;
+        transition: 0.3s;
+        text-align: center;
+        border: 2px solid #fca311;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+      }
+      .project-box:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 6px 12px rgba(252, 163, 17, 0.5);
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .project-boxes {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .project-box {
+          width: 90%;
+          max-width: 320px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="projects" id="Projects">
+      <h1>
+        Javascript Projects
+        <i class="fab fa-css3-alt" style="font-size: 40px"></i>
+      </h1>
+      <!-- github link -->
+      <a
+        href="https://github.com/AlfiyaFullStackDeveloper312/alfiya_html_project/tree/main/html_Project"
+      >
+        <button class="git">Github link</button>
+      </a>
+      <br />
+      <br />
+      <div class="project-boxes">
+        <!-- Blood-donation project project -->
+        <div class="project-box">
+          <a href="../javascript/blood_donation.html">
+            <img
+              src="https://api.parashospitals.com/uploads/2017/06/all-about-blood-donation.jpg"
+              width="300px"
+              height="200px"
+            /> </a
+          >Blood-Donation Project
+        </div>
+        <!-- Amount check projects -->
+        <div class="project-box">
+          <a href="../javascript/Amount_check.html">
+            <img
+              src="https://c4.wallpaperflare.com/wallpaper/136/1008/887/atm-girl-hands-password-wallpaper-preview.jpg"
+              width="300px"
+              height="200px"
+            /> </a
+          >Amount Check Project
+        </div>
+
+        <!-- Multiply number project -->
+        <div class="project-box">
+          <a href="../javascript/number_multiply.html">
+            <img
+              src="https://thumbs.dreamstime.com/b/basic-mathematical-operations-symbols-plus-minus-multiply-divide-wooden-cubes-yellow-background-mathematic-math-272543381.jpg"
+              width="300px"
+              height="200px"
+            /> </a
+          >Number Multiply Project
+        </div>
+        <!-- KBC project -->
+        <div class="project-box">
+          <a href="../javascript/kbc.html">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvpmtd6u58bsJfn5NKz9RVUY7GF1dIW580eA&s"
+              width="300px"
+              height="200px"
+            />
+          </a>KBC Project
+        </div>
+        <!--electric bill -->
+        <div class="project-box">
+          <a href="../javascript/electric_bill.html">
+            <img
+              src="https://png.pngtree.com/thumb_back/fh260/background/20240813/pngtree-above-the-electricity-bill-is-a-calculator-and-light-bulb-representing-image_16157797.jpg"
+              width="300px"
+              height="200px"
+            /> 
+          </a>Electric-bill Project
+        </div>
+        <!--  student mark -->
+        <div class="project-box">
+          <a href="../javascript/mark.html">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/005/110/764/non_2x/marksheet-illustration-on-a-transparent-background-premium-quality-symbols-line-flat-color-icon-for-concept-and-graphic-design-vector.jpg"
+              width="300px"
+              height="200px"
+            />
+          </a>Student Marksheet Project
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

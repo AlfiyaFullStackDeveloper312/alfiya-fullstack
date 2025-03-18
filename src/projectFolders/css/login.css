@@ -1,0 +1,75 @@
+.main-container {
+  background-color: navy;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  height: 40vh;
+  width: 20vw;
+  background-color: white;
+  text-align: center;
+  padding: 5%;
+  margin-top: 50px;
+}
+
+.gender {
+  display: inline-flex;
+}
+
+.button {
+  background-color: lightblue;
+  color: text-color;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  background-color: green;
+  color: text-color;
+  padding: 10%;
+  border: 5px;
+  border: solid;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login-btn:hover {
+  background-color: lightblue;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: lightpink;
+  color: text-color;
+  padding: 10%;
+  border: 5px;
+  border: solid;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: red;
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: gray;
+  color: text-color;
+  padding: 10%;
+  border: 5px;
+  border: solid;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=login.css.map */

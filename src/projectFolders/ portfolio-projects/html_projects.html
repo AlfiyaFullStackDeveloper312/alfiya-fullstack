@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;  
+        font-family: "Poppins", sans-serif;
+      }
+      /* github link */
+      .git {
+        background-color: #fca311;
+        color: #000000;
+        font-size: 18px;
+        border: none;
+        padding: 12px 24px;
+        border: 2px solid #fca311;
+        border-radius: 6px;
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      /* Button Hover Effect */
+      .git:hover {
+        background-color: transparent;
+        color: #fca311;
+        border-color: #fca311;
+        transform: translateY(-2px);
+      }
+      .projects {
+        padding: 50px;
+        text-align: center;
+      }
+
+      .projects h1 {
+        color: #fca311; 
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+
+      .projects h1 i {
+        font-size: 40px;
+        color: #fca311; 
+      }
+
+      /* Project Box Container */
+      .project-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      /* Individual Project Box */
+      .project-box {
+        color: white;
+        background: #14213d;  
+        padding: 20px;
+        width: 280px;
+        border-radius: 10px;
+        transition: 0.3s;
+        text-align: center;
+        border: 2px solid #fca311;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+      }
+
+      .project-box:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 6px 12px rgba(252, 163, 17, 0.5);
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .project-boxes {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .project-box {
+          width: 90%;
+          max-width: 320px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="projects" id="Projects">
+      <h1>
+        HTML Projects
+        <i class="fab fa-html5" style="font-size: 40px"></i>
+      </h1>
+      <!-- github link  -->
+      <a
+        href="https://github.com/AlfiyaFullStackDeveloper312/alfiya_html_project/tree/main/html_Project"
+      >
+        <button class="git">Github link</button>
+      </a>
+      <br />
+      <br />
+      <div class="project-boxes">
+        <!-- HTML project -->
+        <div class="project-box">
+          <a href="../html/ movie.html"
+            ><img
+              src="https://media.licdn.com/dms/image/C4E12AQFUqujJenr-qQ/article-cover_image-shrink_720_1280/0/1596481787707?e=2147483647&v=beta&t=vyVVDw0AIWYXQaiICchQ1lVMHrrxtpTt99TAKqytW50"
+              height="200px"
+              width="300px"
+            />
+          </a>
+          Movie Project
+        </div>
+
+        <div class="project-box">
+          <a href="../html/ top-movies.html"
+            ><img
+              src="https://blog.ipleaders.in/wp-content/uploads/2020/10/film.jpg"
+              width="300px"
+              height="200px"
+            />
+          </a>My Top 5 movies
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
