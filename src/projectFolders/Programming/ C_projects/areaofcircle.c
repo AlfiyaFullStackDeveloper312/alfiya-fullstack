@@ -1,8 +1,9 @@
+// find area circle
  #include <stdio.h>
 int main() {
-    double a = 3.14;   
-    int b = 4;          
-    double c = a * b * b;  
-    printf("%lf\n", c);   
+    double pi = 3.14;   
+    int radius = 4;          
+    double area = pi * radius * radius;  
+    printf("%lf\n", area);   
     return 0;
 }
