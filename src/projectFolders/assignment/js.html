@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Even/Odd Checker</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    body {
+      color: white;
+      padding: 20px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141E30, #243B55);
+    }
+ 
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+ 
+    h1 {
+      margin-bottom: 30px;
+    }
+ 
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+ 
+    .card {
+      background-color: #ffffff;
+      color: #222;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+ 
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #ff7f50;
+    }
+ 
+    .code-box {
+      background-color: #2d2d2d;
+      color: #a2c7f7;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: left;
+      font-family: monospace;
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+ 
+    .input-output {
+      background-color: #f0f0f0;
+      color: #111;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: left;
+    }
+ 
+    .btn-wrap {
+      margin-top: 30px;
+    }
+ 
+    .btn {
+      padding: 10px 25px;
+      background-color: #beddfc;
+      color: rgb(29, 28, 28);
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+ 
+    .btn:hover {
+      background-color: #bdcfe5;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="container">
+    <h1> <i class=" fab fa-js-square"></i> JavaScript Program: Even or Odd Checker</h1>
+ 
+    <div class="card-container">
+      <!-- Assigned Value -->
+      <div class="card">
+        <h2> Code (Assigned Value)</h2>
+        <div class="code-box">
+<code>
+let num = 12;
+let result = (num % 2 === 0) ? "Even" : "Odd";
+</code>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Input</h2>
+        <div class="input-output">
+          Value Assigned: 12
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Output</h2>
+        <div class="input-output" id="outputAssign">
+          The number is Even.
+        </div>
+      </div>
+ 
+      <!-- Prompt Method -->
+      <div class="card">
+        <h2> Code (Prompt)</h2>
+        <div class="code-box">
+<code>
+let num = prompt("Enter a number:");
+let result = (num % 2 === 0) ? "Even" : "Odd";
+</code>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Input</h2>
+        <div class="input-output">
+          <button onclick="checkPrompt()">Enter a Number  </button>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Output</h2>
+        <div class="input-output" id="outputPrompt">
+          Result  
+        </div>
+      </div>
+ 
+      <!-- Alert Method (Value assigned, shown using alert) -->
+      <div class="card">
+        <h2> Code (Alert)</h2>
+        <div class="code-box">
+<code>
+let num = 7;
+alert("Value entered: " + num);
+let result = (num % 2 === 0) ? "Even" : "Odd";
+</code>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Input</h2>
+        <div class="input-output">
+          <button onclick="checkAlert()">Enter the number</button>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <h2> Output</h2>
+        <div class="input-output" id="outputAlert">
+          Result
+        </div>
+      </div>
+    </div>
+ 
+    <div class="btn-wrap">
+      <a class="btn" href="./main.html"> Home</a>
+    </div>
+  </div>
+ 
+  <script>
+    // Assigned value output shown on page load
+    let numAssigned = 12;
+    let resultAssigned = (numAssigned % 2 === 0) ? "Even" : "Odd";
+    document.getElementById("outputAssign").textContent = "The number is " + resultAssigned + ".";
+ 
+    // Prompt version
+    function checkPrompt() {
+      let input = prompt("Enter a number:");
+      if (input !== null && input.trim() !== "") {
+        let num = parseInt(input);
+        if (!isNaN(num)) {
+          let result = (num % 2 === 0) ? "Even" : "Odd";
+          document.getElementById("outputPrompt").textContent = `You entered ${num}. The number is ${result}.`;
+        } else {
+          document.getElementById("outputPrompt").textContent = "Invalid number entered.";
+        }
+      } else {
+        document.getElementById("outputPrompt").textContent = "No input provided.";
+      }
+    }
+ 
+    // "Alert" version (value assigned internally, alert shows value)
+    function checkAlert() {
+      let num = 7;
+      alert("Value entered: " + num);
+      let result = (num % 2 === 0) ? "Even" : "Odd";
+      document.getElementById("outputAlert").textContent = `You entered ${num}. The number is ${result}.`;
+    }
+  </script>
+ 
+</body>
+</html>
